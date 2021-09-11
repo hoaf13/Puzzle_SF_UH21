@@ -1,3 +1,5 @@
+> action_start > intent_start > action_ask_symptom_1
+
 # action_ask_symptom_1
 > action_ask_symptom_1 > describe_symptom > action_ask_department_2
 > action_ask_symptom_1 > cant_hear > action_ask_symptom_1

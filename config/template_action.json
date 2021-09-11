@@ -2,14 +2,14 @@
     "action_ask_symptom_1":[
         {
             "properties": "repeat",
-            "text": "Em xin nhắc lại, em là tổng đài đặt lịch khám bệnh của bệnh viện. Để đặt lịch khám, đầu tiên, anh chị hãy mô tả hiện trạng bệnh.",
-            "text_tts": "Em xin nhắc lại, em là tổng đài đặt lịch khám bệnh của bệnh viện. Để đặt lịch khám, đầu tiên, anh chị hãy mô tả hiện trạng bệnh."
+            "text": "Em xin nhắc lại, em là tổng đài đặt lịch khám bệnh của bệnh viện {get_hospital_name}. Để đặt lịch khám, đầu tiên, anh chị hãy mô tả hiện trạng bệnh.",
+            "text_tts": "Em xin nhắc lại, em là tổng đài đặt lịch khám bệnh của bệnh viện {get_hospital_name}. Để đặt lịch khám, đầu tiên, anh chị hãy mô tả hiện trạng bệnh."
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Xin chào anh chị, em là tổng đài đặt lịch khám bệnh của bệnh viện. Để đặt lịch khám, đầu tiên, anh chị hãy mô tả hiện trạng bệnh.",
-            "text_tts": "Xin chào anh chị, em là tổng đài đặt lịch khám bệnh của bệnh viện. Để đặt lịch khám, đầu tiên, anh chị hãy mô tả hiện trạng bệnh."
+            "text": "Xin chào anh chị, em là tổng đài đặt lịch khám bệnh của bệnh viện {get_hospital_name}. Để đặt lịch khám, đầu tiên, anh chị hãy mô tả hiện trạng bệnh.",
+            "text_tts": "Xin chào anh chị, em là tổng đài đặt lịch khám bệnh của bệnh viện {get_hospital_name}. Để đặt lịch khám, đầu tiên, anh chị hãy mô tả hiện trạng bệnh."
         }
     ],
     "action_ask_department_2":[
@@ -106,14 +106,14 @@
     "action_ask_confirm_9":[
         {
             "properties": "repeat",
-            "text": "Một lần nữa, em xin xác nhận thông tin bệnh nhân như sau {get_info}, có đúng không ạ?",
-            "text_tts": "Một lần nữa, em xin xác nhận thông tin bệnh nhân như sau {get_info}, có đúng không ạ?"
+            "text": "Một lần nữa, em xin xác nhận thông tin bệnh nhân như sau {get_customer_info}, có đúng không ạ?",
+            "text_tts": "Một lần nữa, em xin xác nhận thông tin bệnh nhân như sau {get_customer_info}, có đúng không ạ?"
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Em xin xác nhận thông tin bệnh nhân như sau {get_info}, có đúng không ạ?",
-            "text_tts": "Em xin xác nhận thông tin bệnh nhân như sau {get_info}, có đúng không ạ?"
+            "text": "Em xin xác nhận thông tin bệnh nhân như sau {get_customer_info}, có đúng không ạ?",
+            "text_tts": "Em xin xác nhận thông tin bệnh nhân như sau {get_customer_info}, có đúng không ạ?"
         }
     ],
     "action_ask_wrong_information_10":[
