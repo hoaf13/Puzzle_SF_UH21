@@ -1,0 +1,38 @@
+actions:
+- action_bye_11
+- action_bye_12
+- action_ask_priority_13
+- action_ask_confirm_9
+- action_busy
+- action_ask_department_2
+- action_bye_14
+- action_ask_age_8
+- action_ask_wrong_information_10
+- action_ask_gender_7
+- action_ask_name_6
+- action_ask_symptom_1
+- action_bye_3
+- action_ask_next_week_4
+- action_ask_free_date_5
+
+intents:
+- provide_name
+- busy
+- repeat_three_times
+- free_booking
+- provide_gender
+- ask_date_repeat
+- intent_fallback_again
+- busy_booking
+- ask_name_repeat
+- deny_confirm
+- choose_department
+- choose_another_department
+- pick_date
+- describe_symptom
+- affirm_confirm
+- ask_age_repeat
+- cant_hear
+- ask_gender_repeat
+- intent_fallback
+- provide_age
