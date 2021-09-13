@@ -12038,3 +12038,20 @@ KeyError: 'action_bye_3'
 2021-09-13 13:52:17 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
 2021-09-13 13:52:19 asyncio      DEBUG    Using selector: EpollSelector
 2021-09-13 13:52:19 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-13 14:04:50 home         DEBUG    		Loading Graph
+2021-09-13 14:04:50 home         DEBUG    		Loading Template Action
+2021-09-13 14:04:50 home         DEBUG    		Loading Graph
+2021-09-13 14:04:50 home         DEBUG    		Loading Template Action
+2021-09-13 14:04:50 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-13 14:05:17 home         DEBUG    		Loading Graph
+2021-09-13 14:05:17 home         DEBUG    		Loading Template Action
+2021-09-13 14:05:17 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-13 14:05:17 home         DEBUG    		Loading Graph
+2021-09-13 14:05:17 home         DEBUG    		Loading Template Action
+2021-09-13 14:05:17 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-13 14:05:18 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-13 14:05:18 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-13 14:05:18 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-13 14:05:18 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-13 14:05:20 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-13 14:05:20 asyncio      DEBUG    Using selector: EpollSelector
