@@ -1,57 +1,74 @@
-{% extends 'home/base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Puzzle Team</title>
+  
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
-{% block static_extension %}
-  {% comment %} {% load static %} {% endcomment %}
-  {% comment %} <script src="{% static 'js/home-socket.js' %}"></script> {% endcomment %}
-{% endblock static_extension %}
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript" src="{% static 'js/action.js'%}"></script>
+  
 
-{% block title %}Home{% endblock %}
+</head>
+<body>
+  <div id="center-text">
+    <img src="{% static 'img/puzzle_logo.png'%}" alt="Puzzle" style="width: 220px; border-radius: 10px; -webkit-box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); -moz-box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); cursor: pointer;">
+    <h2 style="font-family: 'Word Sans', sans-serif; font-size: 128px;font-weight: bold;margin-top: 70px;">Puzzle Team</h2>
+    <h2 style="color: #21abf3;">Welcome to the Virtual Assistant Booking</h2>
+  </div> 
+<div id="body"> 
+  
+<div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+        <i class="material-icons">message</i>
+  </div>
+  
+  <div class="chat-box">
+    <div class="chat-box-header">
+      <div class=".chat-head-img">
+        <img src="{% static 'img/puzzle_logo.png'%}" alt="Puzzle" class="img-head">
+      </div>
+      <div class=".chat-head-text">
+        <h1 class="text-head"> ChatBot </h1>
+      </div>
+      <div class="point"></div>
+      <div class="chat-head-icon chat-box-toggle">
+        
+      </div>
+    </div>
+    <div class="chat-box-body">
+      <div class="chat-logs">
+      </div><!--chat-logs-->
+    </div>
 
-{% block content %}
 
-<textarea id="chat-log" cols="100" rows="20"></textarea><br>
-    <input id="chat-message-input" type="text" size="100"><br>
-    <input id="chat-message-submit" type="button" value="Send"></br>
-    room-id: <span id="room-id"></span>
-    <script>
+    <div class="chat-box-bottom">
+      <div class="chat-box-bottom-icon">
+        <i class="fas fa-bars ico-bot"></i>
+      </div>
+      <div class="chat-box-bottom-input">
+        <form>
+          <textarea name="chat" class="input-bottom but-send" placeholder="Type your message..." onclick="" id="chat-input"></textarea>
+        <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons ico-bot-send">send</i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
 
-        const chatSocket = new WebSocket(
-            'ws://'
-            + window.location.host
-            + '/ws/'
-        );
 
-        chatSocket.onmessage = function(e) {
-            const data = JSON.parse(e.data);
-            document.querySelector('#chat-log').value += (data.message + '\n');
-            room = document.getElementById('room-id')
-
-            if (room.innerHTML == ""){
-                room.innerHTML += data.room_id;
-            }
-                
-        };
-
-        chatSocket.onclose = function(e) {
-            console.error('Chat socket closed unexpectedly');
-        };
-
-        document.querySelector('#chat-message-input').focus();
-        document.querySelector('#chat-message-input').onkeyup = function(e) {
-            if (e.keyCode === 13) {  // enter, return
-                document.querySelector('#chat-message-submit').click();
-            }
-        };
-
-        document.querySelector('#chat-message-submit').onclick = function(e) {
-            const messageInputDom = document.querySelector('#chat-message-input');
-            const message = messageInputDom.value;
-            chatSocket.send(JSON.stringify({
-                'message': message
-            }));
-            messageInputDom.value = '';
-        };
-    </script>
-
-    
-{% endblock content %}
+</body>
+</html>

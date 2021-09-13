@@ -9,3 +9,4 @@ class HomeView(View):
         context = {}
         return render(request, template_name='home/home.html', context=context)
 
+        

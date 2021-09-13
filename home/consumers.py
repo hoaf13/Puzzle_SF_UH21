@@ -68,16 +68,17 @@ class ChatConsumer(AsyncWebsocketConsumer):
         message = event['message'] 
         logger.debug(f"Client message: {message}")
         logger.debug(f"chat message - records first: {self.scope['session']['records']}")
-        await self.send(text_data=json.dumps({
-            'message': message,
-            'room_id': self.scope['session']['records']['room_id']
-        }))
+        # await self.send(text_data=json.dumps({
+        #     'message': message,
+        #     'room_id': self.scope['session']['records']['room_id']
+        # }))
+        
         records = self.scope['session']['records']
         true_intent = get_true_intent(message, records)
         logger.debug(f"chat_message - true_intent:{true_intent}")
         true_action = get_true_action(true_intent, records)
         logger.debug(f"chat_message - true_action:{true_action}")
-        message = "Bot: " + get_message_response(message, records, true_intent, true_action)
+        message = get_message_response(message, records, true_intent, true_action)
         self.scope['records'] = update_records(records, true_intent, true_action)
         await self.send(text_data=json.dumps({
             'message': message,
