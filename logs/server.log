@@ -12055,3 +12055,42 @@ KeyError: 'action_bye_3'
 2021-09-13 14:05:18 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
 2021-09-13 14:05:20 asyncio      DEBUG    Using selector: EpollSelector
 2021-09-13 14:05:20 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:51:58 home         DEBUG    		Loading Graph
+2021-09-15 14:51:58 home         DEBUG    		Loading Template Action
+2021-09-15 14:51:58 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:51:59 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:58:10 home         DEBUG    		Loading Graph
+2021-09-15 14:58:10 home         DEBUG    		Loading Template Action
+2021-09-15 14:58:10 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:58:11 home         DEBUG    		Loading Graph
+2021-09-15 14:58:11 home         DEBUG    		Loading Template Action
+2021-09-15 14:58:11 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:58:11 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-15 14:58:11 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-15 14:58:11 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-15 14:58:11 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-15 14:58:15 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:58:15 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:58:34 home         DEBUG    		Loading Graph
+2021-09-15 14:58:34 home         DEBUG    		Loading Template Action
+2021-09-15 14:58:34 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:58:35 home         DEBUG    		Loading Graph
+2021-09-15 14:58:35 home         DEBUG    		Loading Template Action
+2021-09-15 14:58:35 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:58:35 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-15 14:58:35 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-15 14:58:35 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-15 14:58:35 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-15 14:58:46 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 36550]
+2021-09-15 14:58:46 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 36550]
+2021-09-15 14:58:46 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 36550]
+2021-09-15 14:58:46 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 36550]
+2021-09-15 14:58:46 django.channels.server INFO     [mHTTP GET /apis/v1/save_record/ 200 [0.03, 127.0.0.1:36550][0m
+2021-09-15 14:58:46 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 36550]
+2021-09-15 14:58:46 django.request WARNING  Not Found: /favicon.ico
+2021-09-15 14:58:46 daphne.http_protocol DEBUG    HTTP 404 response started for ['127.0.0.1', 36550]
+2021-09-15 14:58:46 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 36550]
+2021-09-15 14:58:46 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 36550]
+2021-09-15 14:58:46 django.channels.server WARNING  [33mHTTP GET /favicon.ico 404 [0.03, 127.0.0.1:36550][0m
+2021-09-15 14:58:51 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-15 14:58:52 asyncio      DEBUG    Using selector: EpollSelector

@@ -68,11 +68,42 @@
 > action_ask_confirm_9 > repeat_three_times > action_ask_confirm_9
 
 # action_ask_wrong_information_10
-> action_ask_wrong_information_10 > ask_name_repeat > action_ask_name_6
-> action_ask_wrong_information_10 > ask_age_repeat > action_ask_age_8
-> action_ask_wrong_information_10 > ask_gender_repeat > action_ask_gender_7
-> action_ask_wrong_information_10 > ask_date_repeat > action_ask_free_date_5
+> action_ask_wrong_information_10 > ask_name_repeat > action_ask_name_repeat_15
+> action_ask_wrong_information_10 > provide_name > action_ask_confirm_9
+> action_ask_wrong_information_10 > ask_age_repeat > action_ask_age_repeat_16
+> action_ask_wrong_information_10 > provide_age > action_ask_confirm_9
+> action_ask_wrong_information_10 > ask_gender_repeat > action_ask_gender_repeat_17
+> action_ask_wrong_information_10 > provide_gender > action_ask_gender_repeat_17
+> action_ask_wrong_information_10 > ask_date_repeat > action_ask_free_date_repeat_18
+> action_ask_wrong_information_10 > pick_date > action_ask_free_date_repeat_18
 > action_ask_wrong_information_10 > intent_fallback > action_ask_wrong_information_10
 > action_ask_wrong_information_10 > intent_fallback_again > action_ask_wrong_information_10
 > action_ask_wrong_information_10 > repeat_three_times > action_ask_wrong_information_10
 
+# action_ask_name_repeat_15
+> action_ask_name_repeat_15 > provide_name > action_ask_confirm_9
+> action_ask_name_repeat_15 > cant_hear > action_ask_name_repeat_15
+> action_ask_name_repeat_15 > intent_fallback > action_ask_name_repeat_15
+> action_ask_name_repeat_15 > intnet_fallback_again > action_ask_name_repeat_15
+> action_ask_name_repeat_15 > repeat_three_times > action_bye_12 
+
+# action_ask_age_repeat_16
+> action_ask_age_repeat_16 > provide_name > action_ask_confirm_9
+> action_ask_age_repeat_16 > cant_hear > action_ask_age_repeat_16
+> action_ask_age_repeat_16 > intent_fallback > action_ask_age_repeat_16
+> action_ask_age_repeat_16 > intnet_fallback_again > action_ask_age_repeat_16
+> action_ask_age_repeat_16 > repeat_three_times > action_bye_12 
+
+# action_ask_gender_repeat_17
+> action_ask_gender_repeat_17 > provide_name > action_ask_confirm_9
+> action_ask_gender_repeat_17 > cant_hear > action_ask_gender_repeat_17
+> action_ask_gender_repeat_17 > intent_fallback > action_ask_gender_repeat_17
+> action_ask_gender_repeat_17 > intnet_fallback_again > action_ask_gender_repeat_17
+> action_ask_gender_repeat_17 > repeat_three_times > action_bye_12 
+
+# action_ask_free_date_repeat_18
+> action_ask_free_date_repeat_18 > provide_name > action_ask_confirm_9
+> action_ask_free_date_repeat_18 > cant_hear > action_ask_free_date_repeat_18
+> action_ask_free_date_repeat_18 > intent_fallback > action_ask_free_date_repeat_18
+> action_ask_free_date_repeat_18 > intnet_fallback_again > action_ask_free_date_repeat_18
+> action_ask_free_date_repeat_18 > repeat_three_times > action_bye_12 

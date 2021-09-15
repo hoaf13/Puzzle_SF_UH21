@@ -180,5 +180,57 @@
             "text": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ.",
             "text_tts": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ."
         }
+    ],
+    "action_ask_name_repeat_15":[
+        {
+            "properties": "repeat",
+            "text": "Em chưa rõ tên bệnh nhân, anh chị vui lòng đọc lại tên bệnh nhân giúp em.",
+            "text_tts": "Em chưa rõ tên bệnh nhân, anh chị vui lòng đọc lại tên bệnh nhân giúp em."
+        },
+        {
+            "status": "chat",
+            "properties": "first_time",
+            "text": "Anh chị vui lòng đọc tên bệnh nhân giúp em.",
+            "text_tts": "Anh chị vui lòng đọc tên bệnh nhân giúp em."
+        }
+    ],
+    "action_ask_age_repeat_16":[
+        {
+            "properties": "repeat",
+            "text": "Em chưa rõ tuổi bệnh nhân, anh chị vui lòng đọc lại tuổi bệnh nhân giúp em.",
+            "text_tts": "Em chưa rõ tuổi bệnh nhân, anh chị vui lòng đọc lại tuổi bệnh nhân giúp em."
+        },
+        {
+            "status": "chat",
+            "properties": "first_time",
+            "text": "Anh chị vui lòng đọc tuổi bệnh nhân giúp em.",
+            "text_tts": "Anh chị vui lòng đọc tuổi bệnh nhân giúp em."
+        }
+    ],
+    "action_ask_gender_repeat_17":[
+        {
+            "properties": "repeat",
+            "text": "Em chưa rõ giới tính, anh chị vui lòng đọc lại giới tính bệnh nhân giúp em.",
+            "text_tts": "Em chưa rõ giới tính, anh chị vui lòng đọc lại giới tính bệnh nhân giúp em."
+        },
+        {
+            "status": "chat",
+            "properties": "first_time",
+            "text": "Anh chị vui lòng đọc giới tính bệnh nhân giúp em.",
+            "text_tts": "Anh chị vui lòng đọc giới tính bệnh nhân giúp em."
+        }
+    ],
+    "action_ask_free_date_repeat_18":[
+        {
+            "properties": "repeat",
+            "text": "Ngày anh chị chọn chưa hợp lý, em xin hỏi lại, trong những ngày sau: {get_free_date}, anh chị chọn ngày nào để đi khám ạ ?",
+            "text_tts": "Ngày anh chị chọn chưa hợp lý, em xin hỏi lại, trong những ngày sau: {get_free_date}, anh chị chọn ngày nào để đi khám ạ ?"
+        },
+        {
+            "status": "chat",
+            "properties": "first_time",
+            "text": "Trong những ngày sau: {get_free_date}, anh chị chọn ngày nào để đi khám ạ ?",
+            "text_tts": "Trong những ngày sau: {get_free_date}, anh chị chọn ngày nào để đi khám ạ ?"
+        }
     ]
 }
