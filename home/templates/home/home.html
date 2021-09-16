@@ -23,7 +23,7 @@
 </head>
 <body>
   <div id="center-text">
-    <img src="{% static 'img/puzzle_logo.png'%}" alt="Puzzle" style="width: 220px; border-radius: 10px; -webkit-box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); -moz-box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); cursor: pointer;">
+    <img value = "stop-recording" id = "record-button" src="{% static 'img/puzzle_logo.png'%}" alt="Puzzle" style="width: 220px; border-radius: 10px; -webkit-box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); -moz-box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); cursor: pointer;">
     <h2 style="font-family: 'Word Sans', sans-serif; font-size: 128px;font-weight: bold;margin-top: 70px;">Puzzle Team</h2>
     <h2 style="color: #21abf3;">Welcome to the Virtual Assistant Booking</h2>
   </div> 
@@ -68,7 +68,8 @@
   
 </div>
   
-
-
+{% load static %}
+<script type="text/javascript" src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+<script type="text/javascript" src="{% static 'js/audio-record.js'%}"></script>
 </body>
 </html>

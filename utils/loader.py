@@ -24,7 +24,7 @@ class Loader():
 
     def load_action(dir2file):
         actions = dict()
-        f = open(dir2file)
+        f = open(dir2file, encoding="utf8")
         actions = json.load(f)
         print(actions)
         return actions
