@@ -16,7 +16,8 @@ recordButton.addEventListener("click", startRecording);
 
 function startRecording() {
 	console.log("recordButton clicked");
-  if (recordButton.value == "stop-recording"){
+  console.log(recordButton.value);
+  if (recordButton.value != "recording"){
 
     /*
       Simple constraints object, for more advanced audio features see
