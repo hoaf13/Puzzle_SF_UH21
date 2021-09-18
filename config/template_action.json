@@ -29,13 +29,13 @@
         {
             "properties": "repeat",
             "text": "Em xin ghi nhận phản hồi của anh chị. Nhân viên hỗ trợ bên em sẽ liên lạc lại với anh chị để có thể đặt lịch hẹn sớm nhất. Xin anh chị nhớ chú ý điện thoại, em xin cảm ơn.",
-            "text_tts": "Em xin ghi nhận phản hồi của anh chị. Nhân viên hỗ trợ bên em sẽ liên lạc lại với anh chị để có thể đặt lịch hẹn sớm nhất. Xin anh chị nhớ chú ý điện thoại, em xin cảm ơn"
+            "text_tts": "Em xin ghi nhận phản hồi của anh chị. Nhân viên hỗ trợ bên em sẽ liên lạc lại với anh chị để có thể đặt lịch hẹn sớm nhất. Xin anh chị nhớ chú ý điện thoại, em xin cảm ơn."
         },
         {
             "status": "end",
             "properties": "first_time",
-            "text": "Em xin ghi nhận phản hồi của anh chị. Nhân viên hỗ trợ bên em sẽ liên lạc lại với anh chị để có thể đặt lịch hẹn sớm nhất. Xin anh chị nhớ chú ý điện thoại, em xin cảm ơn",
-            "text_tts": "Em xin ghi nhận phản hồi của anh chị. Nhân viên hỗ trợ bên em sẽ liên lạc lại với anh chị để có thể đặt lịch hẹn sớm nhất. Xin anh chị nhớ chú ý điện thoại, em xin cảm ơn"
+            "text": "Em xin ghi nhận phản hồi của anh chị. Nhân viên hỗ trợ bên em sẽ liên lạc lại với anh chị để có thể đặt lịch hẹn sớm nhất. Xin anh chị nhớ chú ý điện thoại, em xin cảm ơn.",
+            "text_tts": "Em xin ghi nhận phản hồi của anh chị. Nhân viên hỗ trợ bên em sẽ liên lạc lại với anh chị để có thể đặt lịch hẹn sớm nhất. Xin anh chị nhớ chú ý điện thoại, em xin cảm ơn."
         }
     ],
     "action_ask_next_week_4":[
@@ -55,7 +55,7 @@
         {
             "properties": "repeat",
             "text": "Thông tin chưa chính xác. Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?",
-            "text_tts": "Thông tin chưa chính xác. Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ"
+            "text_tts": "Thông tin chưa chính xác. Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?"
         },
         {
             "status": "chat",
@@ -67,21 +67,21 @@
     "action_ask_name_6":[
         {
             "properties": "repeat",
-            "text": "Em xin nhắc lại, anh chị vui lòng cho biết tên bệnh nhân.",
-            "text_tts": "Em xin nhắc lại, anh chị vui lòng cho biết tên bệnh nhân."
+            "text": "Xin lỗi em chưa rõ, anh chị vui lòng nhắc lại đầy đủ tên bệnh nhân.",
+            "text_tts": "Xin lỗi em chưa rõ, anh chị vui lòng nhắc lại đầy đủ tên bệnh nhân."
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Anh chị vui lòng cho biết tên bệnh nhân.",
-            "text_tts": "Anh chị vui lòng cho biết tên bệnh nhân."
+            "text": "Anh chị vui lòng cho biết tên đầy đủ của bệnh nhân.",
+            "text_tts": "Anh chị vui lòng cho biết tên đầy đủ của bệnh nhân."
         }
     ],
     "action_ask_gender_7":[
         {
             "properties": "repeat",
-            "text": "Em xin nhắc lại, anh chị vui lòng cho biết giới tính bệnh nhân.",
-            "text_tts": "Em xin nhắc lại, anh chị vui lòng cho biết giới tính bệnh nhân."
+            "text": "Xin lỗi em chưa rõ, anh chị vui lòng nhắc lại giới tính bệnh nhân.",
+            "text_tts": "Xin lỗi em chưa rõ, anh chị vui lòng nhắc lại giới tính bệnh nhân."
         },
         {
             "status": "chat",
@@ -93,8 +93,8 @@
     "action_ask_age_8":[
         {
             "properties": "repeat",
-            "text": "Em xin hỏi lại, bệnh nhân bao nhiêu tuổi ạ.",
-            "text_tts": "Em xin hỏi lại, bệnh nhân bao nhiêu tuổi ạ."
+            "text": "Xin lỗi em chưa rõ, bệnh nhân bao nhiêu tuổi ạ.",
+            "text_tts": "Xin lỗi em chưa rõ, bệnh nhân bao nhiêu tuổi ạ."
         },
         {
             "status": "chat",
@@ -145,14 +145,14 @@
     "action_bye_12":[
         {
             "properties": "repeat",
-            "text": "Em xin lỗi, em chưa hiểu ý định của quý khách. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ.",
-            "text_tts": "Em xin lỗi, em chưa hiểu ý định của quý khách. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ."
+            "text": "Em xin lỗi, em chưa hiểu ý định của anh chị. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với anh chị sau ạ. Tạm biệt anh chị.",
+            "text_tts": "Em xin lỗi, em chưa hiểu ý định của anh chị. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với anh chị sau ạ. Tạm biệt anh chị."
         },
         {
             "status": "end",
             "properties": "first_time",
-            "text": "Em xin lỗi, em chưa hiểu ý định của quý khách. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ.",
-            "text_tts": "Em xin lỗi, em chưa hiểu ý định của quý khách. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ."
+            "text": "Em xin lỗi, em chưa hiểu ý định của anh chị. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với anh chị sau ạ. Tạm biệt anh chị.",
+            "text_tts": "Em xin lỗi, em chưa hiểu ý định của anh chị. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với anh chị sau ạ. Tạm biệt anh chị."
         }
     ],
     "action_ask_priority_13":[
@@ -171,14 +171,14 @@
     "action_bye_14":[
         {
             "properties": "repeat",
-            "text": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ.",
-            "text_tts": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn, để liên hệ với quý khách sau ạ."
+            "text": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với anh chị sau ạ. Tạm biệt anh chị.",
+            "text_tts": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn, để liên hệ với anh chị sau ạ. Tạm biệt anh chị."
         },
         {
             "status": "end",
             "properties": "first_time",
-            "text": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ.",
-            "text_tts": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ."
+            "text": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với anh chị sau ạ. Tạm biệt anh chị.",
+            "text_tts": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với anh chị sau ạ. Tạm biệt anh chị."
         }
     ],
     "action_ask_name_wrong_15":[
@@ -231,6 +231,14 @@
             "properties": "first_time",
             "text": "Trong những ngày sau: {get_free_date}, anh chị chọn ngày nào để đi khám ạ ?",
             "text_tts": "Trong những ngày sau: {get_free_date}, anh chị chọn ngày nào để đi khám ạ ?"
+        }
+    ],
+    "action_choose_another_department":[
+        {
+            "status": "chat",
+            "properties": "first_time",
+            "text": "Hiện tại bên em chưa hỗ trợ đặt lịch các khoa khám bệnh khác, nhân viên hỗ trợ sẽ liên lạc lại với anh chị trong vài phút tới. Anh chị lưu ý giúp em. Tạm biệt anh chị.",
+            "text_tts": "Hiện tại, bên em chưa hỗ trợ đặt lịch các khoa khám bệnh khác, nhân viên hỗ trợ sẽ liên lạc lại với anh chị trong vài phút tới. Anh chị lưu ý giúp em. Tạm biệt anh chị."
         }
     ]
 }

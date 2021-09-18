@@ -8,11 +8,12 @@
 > action_ask_symptom_1 > repeat_three_times > action_bye_12
 
 # action_ask_department_2
-> action_ask_department_2 > choose_another_department > action_bye_3
+> action_ask_department_2 > choose_another_department > action_choose_another_department
 > action_ask_department_2 > deny_confirm > action_bye_3
 > action_ask_department_2 > choose_department > action_ask_department_2
 > action_ask_department_2 > free_booking > action_ask_free_date_5
 > action_ask_department_2 > busy_booking > action_ask_next_week_4
+> action_ask_department_2 > cant_hear > action_ask_department_2
 > action_ask_department_2 > intent_fallback > action_ask_department_2
 > action_ask_department_2 > intent_fallback_again > action_ask_department_2
 > action_ask_department_2 > repeat_three_times > action_bye_12
@@ -20,6 +21,7 @@
 # action_ask_next_week_4 
 > action_ask_next_week_4 > deny_confirm > action_bye_14
 > action_ask_next_week_4 > affirm_confirm > action_ask_free_date_5 
+> action_ask_next_week_4 > cant_hear > action_ask_next_week_4
 > action_ask_next_week_4 > intent_fallback > action_ask_next_week_4
 > action_ask_next_week_4 > intent_fallback_again > action_ask_next_week_4
 > action_ask_next_week_4 > repeat_three_times > action_bye_12
@@ -82,33 +84,38 @@
 > action_ask_wrong_information_10 > provide_gender > action_ask_gender_wrong_17
 > action_ask_wrong_information_10 > ask_date_wrong > action_ask_free_date_repeat_18
 > action_ask_wrong_information_10 > pick_date > action_ask_free_date_repeat_18
+> action_ask_wrong_information_10 > cant_hear > action_ask_wrong_information_10
 > action_ask_wrong_information_10 > intent_fallback > action_ask_wrong_information_10
 > action_ask_wrong_information_10 > intent_fallback_again > action_ask_wrong_information_10
 > action_ask_wrong_information_10 > repeat_three_times > action_ask_wrong_information_10
 
 # action_ask_name_wrong_15
 > action_ask_name_wrong_15 > provide_name > action_ask_confirm_9
+> action_ask_name_wrong_15 > ask_name_wrong > action_ask_gender_7
 > action_ask_name_wrong_15 > cant_hear > action_ask_name_wrong_15
 > action_ask_name_wrong_15 > intent_fallback > action_ask_name_wrong_15
 > action_ask_name_wrong_15 > intnet_fallback_again > action_ask_name_wrong_15
 > action_ask_name_wrong_15 > repeat_three_times > action_bye_12 
 
 # action_ask_age_wrong_16
-> action_ask_age_wrong_16 > provide_name > action_ask_confirm_9
+> action_ask_age_wrong_16 > provide_age > action_ask_confirm_9
+> action_ask_age_wrong_16 > ask_name_wrong > action_ask_confirm_9
 > action_ask_age_wrong_16 > cant_hear > action_ask_age_wrong_16
 > action_ask_age_wrong_16 > intent_fallback > action_ask_age_wrong_16
 > action_ask_age_wrong_16 > intnet_fallback_again > action_ask_age_wrong_16
 > action_ask_age_wrong_16 > repeat_three_times > action_bye_12 
 
 # action_ask_gender_wrong_17
-> action_ask_gender_wrong_17 > provide_name > action_ask_confirm_9
+> action_ask_gender_wrong_17 > provide_gender > action_ask_confirm_9
+> action_ask_gender_wrong_17 > ask_name_wrong > action_ask_confirm_9
 > action_ask_gender_wrong_17 > cant_hear > action_ask_gender_wrong_17
 > action_ask_gender_wrong_17 > intent_fallback > action_ask_gender_wrong_17
 > action_ask_gender_wrong_17 > intnet_fallback_again > action_ask_gender_wrong_17
 > action_ask_gender_wrong_17 > repeat_three_times > action_bye_12 
 
 # action_ask_free_date_repeat_18
-> action_ask_free_date_repeat_18 > provide_name > action_ask_confirm_9
+> action_ask_free_date_repeat_18 > pick_date > action_ask_confirm_9
+> action_ask_free_date_repeat_18 > no_date > action_ask_confirm_9
 > action_ask_free_date_repeat_18 > cant_hear > action_ask_free_date_repeat_18
 > action_ask_free_date_repeat_18 > intent_fallback > action_ask_free_date_repeat_18
 > action_ask_free_date_repeat_18 > intnet_fallback_again > action_ask_free_date_repeat_18

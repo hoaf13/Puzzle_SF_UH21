@@ -4,7 +4,9 @@ records = {
     "pre_intent": None,
     "cur_action": None,
     "cur_intent": None,
-    
+    "time_repeat": 0,
+    "confirm_repeat": 0,
+
     "hospital_name": "Hồng Ngọc",
     "choosen_department": None,
     "customer_name": None,
