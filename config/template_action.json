@@ -54,14 +54,14 @@
     "action_ask_free_date_5":[
         {
             "properties": "repeat",
-            "text": "Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?",
-            "text_tts": "Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ"
+            "text": "Thông tin chưa chính xác. Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?",
+            "text_tts": "Thông tin chưa chính xác. Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ"
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Hiện lịch khám còn trống những ngày sau, anh chị muốn chọn lịch khám nào ạ?",
-            "text_tts": "Hiện lịch khám còn trống những ngày sau, anh chị muốn chọn lịch khám nào ạ?"
+            "text": "Hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?",
+            "text_tts": "Hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?"
         }
     ],
     "action_ask_name_6":[
@@ -80,14 +80,14 @@
     "action_ask_gender_7":[
         {
             "properties": "repeat",
-            "text": "Em xin nhắc lại, anh chị vui lòng cho biết giới tính.",
-            "text_tts": "Em xin nhắc lại, anh chị vui lòng cho biết giới tính."
+            "text": "Em xin nhắc lại, anh chị vui lòng cho biết giới tính bệnh nhân.",
+            "text_tts": "Em xin nhắc lại, anh chị vui lòng cho biết giới tính bệnh nhân."
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Anh chị vui lòng cho biết giới tính.",
-            "text_tts": "Anh chị vui lòng cho biết giới tính."
+            "text": "Anh chị vui lòng cho biết giới tính bệnh nhân.",
+            "text_tts": "Anh chị vui lòng cho biết giới tính bệnh nhân."
         }
     ],
     "action_ask_age_8":[
@@ -106,40 +106,40 @@
     "action_ask_confirm_9":[
         {
             "properties": "repeat",
-            "text": "Một lần nữa, em xin xác nhận thông tin bệnh nhân như sau {get_customer_info}, có đúng không ạ?",
-            "text_tts": "Một lần nữa, em xin xác nhận thông tin bệnh nhân như sau {get_customer_info}, có đúng không ạ?"
+            "text": "Một lần nữa, em xin xác nhận thông tin bệnh nhân như sau: {get_customer_info}, có đúng không ạ?",
+            "text_tts": "Một lần nữa, em xin xác nhận thông tin bệnh nhân như sau. {get_customer_info}, có đúng không ạ?"
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Em xin xác nhận thông tin bệnh nhân như sau {get_customer_info}, có đúng không ạ?",
-            "text_tts": "Em xin xác nhận thông tin bệnh nhân như sau {get_customer_info}, có đúng không ạ?"
+            "text": "Em xin xác nhận thông tin như sau: {get_customer_info}, có đúng không ạ?",
+            "text_tts": "Em xin xác nhận thông tin như sau. {get_customer_info}, có đúng không ạ?"
         }
     ],
     "action_ask_wrong_information_10":[
         {
             "properties": "repeat",
-            "text": "Dạ thông tin nào bị sai vậy ạ.",
-            "text_tts": "Dạ , thông tin nào bị sai vậy ạ."
+            "text": "Em xin nhắc lại, trong những thông tin sau, thông tin nào bị sai vậy ạ: tên, giới tính, tuổi hay ngày đi khám.",
+            "text_tts": "Em xin nhắc lại, trong những thông tin sau, thông tin nào bị sai vậy ạ: tên, giới tính, tuổi hay ngày đi khám."
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Dạ thông tin nào bị sai vây ạ.",
-            "text_tts": "Dạ thông tin nào bị sai vây ạ."
+            "text": "Dạ, trong những thông tin sau, thông tin nào bị sai vậy ạ: tên, giới tính, tuổi hay ngày đi khám.",
+            "text_tts": "Dạ, trong những thông tin sau, thông tin nào bị sai vậy ạ: tên, giới tính, tuổi hay ngày đi khám."
         }
     ],
     "action_bye_11":[
         {
             "properties": "repeat",
-            "text": "Cảm ơn quý khách đã đặt lịch. Quý khách lưu ý đến khám đúng lịch đã hẹn. Trường hợp quý khách cần siêu âm, nội soi, xét nghiệm, vui lòng không ăn sáng. Tạm biệt quý khách!",
-            "text_tts": "Cảm ơn quý khách đã đặt lịch. Quý khách lưu ý đến khám đúng lịch đã hẹn. Trường hợp quý khách cần siêu âm, nội soi, xét nghiệm, vui lòng không ăn sáng. Tạm biệt quý khách!"
+            "text": "Bệnh viện {get_hospital_name} xin thông báo, lịch khám bệnh của anh chị là {get_meeting_time}. Trong trường hợp cần tư vấn, anh chị gọi tới số hotline của bệnh viện {get_hospital_name}. Tạm biệt anh chị.",
+            "text_tts": "Bệnh viện {get_hospital_name} xin thông báo, lịch khám bệnh của anh chị là {get_meeting_time}. Trong trường hợp cần tư vấn, anh chị gọi tới số hotline của bệnh viện {get_hospital_name}. Tạm biệt anh chị."
         },
         {
             "status": "end",
             "properties": "first_time",
-            "text": "Cảm ơn quý khách đã đặt lịch. Quý khách lưu ý đến khám đúng lịch đã hẹn. Trường hợp quý khách cần siêu âm, nội soi, xét nghiệm, vui lòng không ăn sáng. Tạm biệt quý khách!",
-            "text_tts": "Cảm ơn quý khách đã đặt lịch. Quý khách lưu ý đến khám đúng lịch đã hẹn. Trường hợp quý khách cần siêu âm, nội soi, xét nghiệm, vui lòng không ăn sáng. Tạm biệt quý khách!"
+            "text": "Bệnh viện {get_hospital_name} xin thông báo, lịch khám bệnh của anh chị là {get_meeting_time}. Trong trường hợp cần tư vấn, anh chị gọi tới số hotline của bệnh viện {get_hospital_name}. Tạm biệt anh chị.",
+            "text_tts": "Bệnh viện {get_hospital_name} xin thông báo, lịch khám bệnh của anh chị là {get_meeting_time}. Trong trường hợp cần tư vấn, anh chị gọi tới số hotline của bệnh viện {get_hospital_name}. Tạm biệt anh chị."
         }
     ],
     "action_bye_12":[
@@ -151,8 +151,8 @@
         {
             "status": "end",
             "properties": "first_time",
-            "text": "Em xin lỗi, em chưa hiểu ý định của quý khách.  Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ.",
-            "text_tts": "Em xin lỗi, em chưa hiểu ý định của quý khách.  Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ."
+            "text": "Em xin lỗi, em chưa hiểu ý định của quý khách. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ.",
+            "text_tts": "Em xin lỗi, em chưa hiểu ý định của quý khách. Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ."
         }
     ],
     "action_ask_priority_13":[
@@ -168,7 +168,7 @@
             "text_tts": "Anh chị có thuộc diện ưu tiên như sau không: gia đình có công với cách mạng, người khuyết tật, phụ nữ có thai."
         }
     ],
-    "action_end_14":[
+    "action_bye_14":[
         {
             "properties": "repeat",
             "text": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ.",
@@ -181,7 +181,7 @@
             "text_tts": "Em xin phép lưu lại thông tin và chuyển tới bộ phận tư vấn để liên hệ với quý khách sau ạ."
         }
     ],
-    "action_ask_name_repeat_15":[
+    "action_ask_name_wrong_15":[
         {
             "properties": "repeat",
             "text": "Em chưa rõ tên bệnh nhân, anh chị vui lòng đọc lại tên bệnh nhân giúp em.",
@@ -194,7 +194,7 @@
             "text_tts": "Anh chị vui lòng đọc tên bệnh nhân giúp em."
         }
     ],
-    "action_ask_age_repeat_16":[
+    "action_ask_age_wrong_16":[
         {
             "properties": "repeat",
             "text": "Em chưa rõ tuổi bệnh nhân, anh chị vui lòng đọc lại tuổi bệnh nhân giúp em.",
@@ -207,7 +207,7 @@
             "text_tts": "Anh chị vui lòng đọc tuổi bệnh nhân giúp em."
         }
     ],
-    "action_ask_gender_repeat_17":[
+    "action_ask_gender_wrong_17":[
         {
             "properties": "repeat",
             "text": "Em chưa rõ giới tính, anh chị vui lòng đọc lại giới tính bệnh nhân giúp em.",

@@ -28,6 +28,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         self.scope['session']['records']['room_id'] = room_id
         self.scope['session']['records']['session_id'] = self.channel_name
         self.scope['session']['records']['pre_action'] = 'action_start'
+        
         # Join room group
         await self.channel_layer.group_add(
             self.room_group_name,
@@ -67,13 +68,9 @@ class ChatConsumer(AsyncWebsocketConsumer):
     async def chat_message(self, event):
         message = event['message'] 
         logger.debug(f"Client message: {message}")
-        logger.debug(f"chat message - records first: {self.scope['session']['records']}")
-        # await self.send(text_data=json.dumps({
-        #     'message': message,
-        #     'room_id': self.scope['session']['records']['room_id']
-        # }))
-        
+        logger.debug(f"chat message - records first: {self.scope['session']['records']}")        
         records = self.scope['session']['records']
+        room_id = self.scope['session']['records']['room_id']
         true_intent = get_true_intent(message, records)
         logger.debug(f"chat_message - true_intent:{true_intent}")
         true_action = get_true_action(true_intent, records)
