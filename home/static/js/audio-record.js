@@ -16,7 +16,8 @@ recordButton.addEventListener("click", startRecording);
 
 function startRecording() {
 	console.log("recordButton clicked");
-  if (recordButton.value == "stop-recording"){
+  console.log(recordButton.value);
+  if (recordButton.value != "recording"){
 
     /*
       Simple constraints object, for more advanced audio features see
@@ -133,3 +134,17 @@ function createDownloadLink(blob) {
     
 	//add the li element to the ol
 }
+
+// recording animation
+$('#record-button').addClass("notRec");
+
+$('#record-button').click(function(){
+	if($('#record-button').hasClass('notRec')){
+		$('#record-button').removeClass("notRec");
+		$('#record-button').addClass("Rec");
+	}
+	else{
+		$('#record-button').removeClass("Rec");
+		$('#record-button').addClass("notRec");
+	}
+});	
