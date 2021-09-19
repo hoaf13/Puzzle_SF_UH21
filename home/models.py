@@ -16,10 +16,11 @@ class Conversation(models.Model):
     
 
 class QApair(models.Model):
-    at_time = models.CharField(max_length=100)
-    intent = models.TextField(max_length=100)
+    create_time_bot_message = models.CharField(max_length=100)
+    create_time_client_message = models.CharField(max_length=100)
     action = models.TextField(max_length=100)
     bot_message = models.TextField(max_length=1000)
+    intent = models.TextField(max_length=100)
     client_message = models.TextField(max_length=1000)  
     conversation = models.ForeignKey(Conversation, on_delete=models.CASCADE)
 

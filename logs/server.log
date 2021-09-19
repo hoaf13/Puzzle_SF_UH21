@@ -37530,3 +37530,509 @@ django.template.exceptions.TemplateDoesNotExist: dashboard/index.html
 2021-09-19 15:42:10 h5py._conv   DEBUG    Creating converter from 5 to 7
 2021-09-19 15:42:10 h5py._conv   DEBUG    Creating converter from 7 to 5
 2021-09-19 15:42:10 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 15:58:02 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 15:58:02 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 15:58:02 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 15:58:02 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 15:58:02 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 15:58:03 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:43619
+2021-09-19 15:58:03 vncorenlp.vncorenlp INFO     Server ID: 19937
+2021-09-19 15:58:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43619
+2021-09-19 15:58:03 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 15:58:08 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43619
+2021-09-19 15:58:08 urllib3.connectionpool DEBUG    http://127.0.0.1:43619 "GET / HTTP/1.1" 200 None
+2021-09-19 15:58:08 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43619
+2021-09-19 15:58:08 urllib3.connectionpool DEBUG    http://127.0.0.1:43619 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 15:58:08 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:43619
+2021-09-19 15:58:08 home         DEBUG    		Loading Graph
+2021-09-19 15:58:08 home         DEBUG    		Loading Template Action
+2021-09-19 15:58:08 home         DEBUG    		Loading NLP Model
+2021-09-19 15:58:08 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 15:58:08 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 15:58:11 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 15:58:11 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 15:58:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43619
+2021-09-19 15:58:11 urllib3.connectionpool DEBUG    http://127.0.0.1:43619 "POST /handle HTTP/1.1" 200 None
+2021-09-19 15:58:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43619
+2021-09-19 15:58:11 urllib3.connectionpool DEBUG    http://127.0.0.1:43619 "POST /handle HTTP/1.1" 200 None
+2021-09-19 15:58:13 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 15:58:13 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 15:58:14 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 15:58:15 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 15:58:15 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 15:58:15 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 15:58:15 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 15:58:15 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:41507
+2021-09-19 15:58:15 vncorenlp.vncorenlp INFO     Server ID: 20070
+2021-09-19 15:58:15 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:41507
+2021-09-19 15:58:15 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 15:58:20 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:41507
+2021-09-19 15:58:20 urllib3.connectionpool DEBUG    http://127.0.0.1:41507 "GET / HTTP/1.1" 200 None
+2021-09-19 15:58:20 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:41507
+2021-09-19 15:58:21 urllib3.connectionpool DEBUG    http://127.0.0.1:41507 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 15:58:21 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:41507
+2021-09-19 15:58:21 home         DEBUG    		Loading Graph
+2021-09-19 15:58:21 home         DEBUG    		Loading Template Action
+2021-09-19 15:58:21 home         DEBUG    		Loading NLP Model
+2021-09-19 15:58:21 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 15:58:21 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 15:58:22 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 15:58:22 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 15:58:22 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:41507
+2021-09-19 15:58:22 urllib3.connectionpool DEBUG    http://127.0.0.1:41507 "POST /handle HTTP/1.1" 200 None
+2021-09-19 15:58:22 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:41507
+2021-09-19 15:58:22 urllib3.connectionpool DEBUG    http://127.0.0.1:41507 "POST /handle HTTP/1.1" 200 None
+2021-09-19 15:58:24 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 15:58:24 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 15:58:24 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 15:58:26 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 15:58:26 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 15:58:26 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:00:00 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 49748]
+2021-09-19 16:00:00 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49748]
+2021-09-19 16:00:00 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49748]
+2021-09-19 16:00:00 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49748]
+2021-09-19 16:00:00 django.channels.server INFO     [mHTTP GET / 200 [0.03, 127.0.0.1:49748][0m
+2021-09-19 16:00:00 django.channels.server INFO     WebSocket HANDSHAKING /ws/ [127.0.0.1:49750]
+2021-09-19 16:00:00 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 49750] to WebSocket
+2021-09-19 16:00:00 home.consumers DEBUG    ChatConsumer - add room id: 927
+2021-09-19 16:00:00 home.consumers DEBUG    ChatConsumer - remain_room: {927}
+2021-09-19 16:00:00 aioredis     DEBUG    Creating tcp connection to ('localhost', 6379)
+2021-09-19 16:00:00 aioredis     DEBUG    Creating tcp connection to ('localhost', 6379)
+2021-09-19 16:00:00 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 49750] open and established
+2021-09-19 16:00:00 django.channels.server INFO     WebSocket CONNECT /ws/ [127.0.0.1:49750]
+2021-09-19 16:00:00 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 49750] accepted by application
+2021-09-19 16:00:45 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/home/consumers.py changed, reloading.
+2021-09-19 16:00:45 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:00:48 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:00:48 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:00:48 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:00:48 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:00:48 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:00:49 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:52173
+2021-09-19 16:00:49 vncorenlp.vncorenlp INFO     Server ID: 20351
+2021-09-19 16:00:49 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:52173
+2021-09-19 16:00:49 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:00:53 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:03:38 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:03:38 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:03:38 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:03:38 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:03:38 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:03:39 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:50197
+2021-09-19 16:03:39 vncorenlp.vncorenlp INFO     Server ID: 20765
+2021-09-19 16:03:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:50197
+2021-09-19 16:03:39 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:03:44 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:50197
+2021-09-19 16:03:44 urllib3.connectionpool DEBUG    http://127.0.0.1:50197 "GET / HTTP/1.1" 200 None
+2021-09-19 16:03:44 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:50197
+2021-09-19 16:03:44 urllib3.connectionpool DEBUG    http://127.0.0.1:50197 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:03:44 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:50197
+2021-09-19 16:03:44 home         DEBUG    		Loading Graph
+2021-09-19 16:03:44 home         DEBUG    		Loading Template Action
+2021-09-19 16:03:44 home         DEBUG    		Loading NLP Model
+2021-09-19 16:03:44 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:03:44 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:03:46 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:03:46 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:03:46 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:50197
+2021-09-19 16:03:46 urllib3.connectionpool DEBUG    http://127.0.0.1:50197 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:03:46 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:50197
+2021-09-19 16:03:46 urllib3.connectionpool DEBUG    http://127.0.0.1:50197 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:03:48 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:03:48 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:03:50 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:03:50 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:03:50 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:03:50 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:03:50 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:03:51 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:42681
+2021-09-19 16:03:51 vncorenlp.vncorenlp INFO     Server ID: 20867
+2021-09-19 16:03:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:42681
+2021-09-19 16:03:51 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:03:56 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:42681
+2021-09-19 16:03:56 urllib3.connectionpool DEBUG    http://127.0.0.1:42681 "GET / HTTP/1.1" 200 None
+2021-09-19 16:03:56 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:42681
+2021-09-19 16:03:56 urllib3.connectionpool DEBUG    http://127.0.0.1:42681 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:03:56 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:42681
+2021-09-19 16:03:56 home         DEBUG    		Loading Graph
+2021-09-19 16:03:56 home         DEBUG    		Loading Template Action
+2021-09-19 16:03:56 home         DEBUG    		Loading NLP Model
+2021-09-19 16:03:56 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:03:56 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:03:57 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:03:57 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:03:57 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:42681
+2021-09-19 16:03:57 urllib3.connectionpool DEBUG    http://127.0.0.1:42681 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:03:57 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:42681
+2021-09-19 16:03:57 urllib3.connectionpool DEBUG    http://127.0.0.1:42681 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:03:59 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:03:59 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:03:59 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:04:01 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:04:01 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:04:01 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:05:06 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 49852]
+2021-09-19 16:05:06 daphne.http_protocol DEBUG    HTTP 200 response started for ['127.0.0.1', 49852]
+2021-09-19 16:05:06 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49852]
+2021-09-19 16:05:06 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49852]
+2021-09-19 16:05:06 django.channels.server INFO     [mHTTP GET /dashboard/ 200 [0.06, 127.0.0.1:49852][0m
+2021-09-19 16:07:10 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/dashboard/urls.py changed, reloading.
+2021-09-19 16:07:10 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:07:12 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:07:13 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:07:13 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:07:13 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:07:13 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:07:14 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:56761
+2021-09-19 16:07:14 vncorenlp.vncorenlp INFO     Server ID: 21263
+2021-09-19 16:07:14 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56761
+2021-09-19 16:07:14 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:07:19 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56761
+2021-09-19 16:07:19 urllib3.connectionpool DEBUG    http://127.0.0.1:56761 "GET / HTTP/1.1" 200 None
+2021-09-19 16:07:19 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56761
+2021-09-19 16:07:19 urllib3.connectionpool DEBUG    http://127.0.0.1:56761 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:07:19 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:56761
+2021-09-19 16:07:19 home         DEBUG    		Loading Graph
+2021-09-19 16:07:19 home         DEBUG    		Loading Template Action
+2021-09-19 16:07:19 home         DEBUG    		Loading NLP Model
+2021-09-19 16:07:19 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:07:19 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:07:20 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:07:20 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:07:20 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56761
+2021-09-19 16:07:20 urllib3.connectionpool DEBUG    http://127.0.0.1:56761 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:07:20 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56761
+2021-09-19 16:07:20 urllib3.connectionpool DEBUG    http://127.0.0.1:56761 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:07:22 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:07:23 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:07:23 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:07:27 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/dashboard/urls.py changed, reloading.
+2021-09-19 16:07:27 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:07:29 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:07:29 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:07:29 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:07:29 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:07:29 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:07:30 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:36921
+2021-09-19 16:07:30 vncorenlp.vncorenlp INFO     Server ID: 21394
+2021-09-19 16:07:30 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:36921
+2021-09-19 16:07:30 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:07:35 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:36921
+2021-09-19 16:07:35 urllib3.connectionpool DEBUG    http://127.0.0.1:36921 "GET / HTTP/1.1" 200 None
+2021-09-19 16:07:35 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:36921
+2021-09-19 16:07:35 urllib3.connectionpool DEBUG    http://127.0.0.1:36921 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:07:35 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:36921
+2021-09-19 16:07:35 home         DEBUG    		Loading Graph
+2021-09-19 16:07:35 home         DEBUG    		Loading Template Action
+2021-09-19 16:07:35 home         DEBUG    		Loading NLP Model
+2021-09-19 16:07:35 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:07:35 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:07:37 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:07:37 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:07:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:36921
+2021-09-19 16:07:37 urllib3.connectionpool DEBUG    http://127.0.0.1:36921 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:07:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:36921
+2021-09-19 16:07:37 urllib3.connectionpool DEBUG    http://127.0.0.1:36921 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:07:39 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:07:39 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:07:39 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:07:54 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/dashboard/urls.py changed, reloading.
+2021-09-19 16:07:54 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:07:56 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:07:56 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:07:56 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:07:56 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:07:56 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:07:57 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:38411
+2021-09-19 16:07:57 vncorenlp.vncorenlp INFO     Server ID: 21500
+2021-09-19 16:07:57 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:38411
+2021-09-19 16:07:57 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:08:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:38411
+2021-09-19 16:08:02 urllib3.connectionpool DEBUG    http://127.0.0.1:38411 "GET / HTTP/1.1" 200 None
+2021-09-19 16:08:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:38411
+2021-09-19 16:08:02 urllib3.connectionpool DEBUG    http://127.0.0.1:38411 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:08:02 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:38411
+2021-09-19 16:08:02 home         DEBUG    		Loading Graph
+2021-09-19 16:08:02 home         DEBUG    		Loading Template Action
+2021-09-19 16:08:02 home         DEBUG    		Loading NLP Model
+2021-09-19 16:08:02 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:08:02 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:08:04 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:08:04 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:08:04 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:38411
+2021-09-19 16:08:04 urllib3.connectionpool DEBUG    http://127.0.0.1:38411 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:08:04 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:38411
+2021-09-19 16:08:04 urllib3.connectionpool DEBUG    http://127.0.0.1:38411 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:08:07 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:08:07 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:08:07 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:08:10 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:08:10 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:08:10 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:08:21 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/dashboard/views.py changed, reloading.
+2021-09-19 16:08:21 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:08:23 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:08:23 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:08:23 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:08:23 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:08:23 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:08:24 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:56631
+2021-09-19 16:08:24 vncorenlp.vncorenlp INFO     Server ID: 21698
+2021-09-19 16:08:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56631
+2021-09-19 16:08:24 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:08:29 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56631
+2021-09-19 16:08:29 urllib3.connectionpool DEBUG    http://127.0.0.1:56631 "GET / HTTP/1.1" 200 None
+2021-09-19 16:08:29 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56631
+2021-09-19 16:08:29 urllib3.connectionpool DEBUG    http://127.0.0.1:56631 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:08:29 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:56631
+2021-09-19 16:08:29 home         DEBUG    		Loading Graph
+2021-09-19 16:08:29 home         DEBUG    		Loading Template Action
+2021-09-19 16:08:29 home         DEBUG    		Loading NLP Model
+2021-09-19 16:08:29 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:08:29 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:08:31 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:08:31 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:08:31 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56631
+2021-09-19 16:08:31 urllib3.connectionpool DEBUG    http://127.0.0.1:56631 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:08:31 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56631
+2021-09-19 16:08:31 urllib3.connectionpool DEBUG    http://127.0.0.1:56631 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:08:33 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:08:33 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:08:33 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:08:35 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:08:35 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:08:35 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:11:04 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/home/models.py changed, reloading.
+2021-09-19 16:11:04 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:11:07 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:11:07 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:11:07 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:11:07 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:11:07 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:11:07 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:43189
+2021-09-19 16:11:07 vncorenlp.vncorenlp INFO     Server ID: 21979
+2021-09-19 16:11:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43189
+2021-09-19 16:11:07 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:11:12 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43189
+2021-09-19 16:11:13 urllib3.connectionpool DEBUG    http://127.0.0.1:43189 "GET / HTTP/1.1" 200 None
+2021-09-19 16:11:13 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43189
+2021-09-19 16:11:13 urllib3.connectionpool DEBUG    http://127.0.0.1:43189 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:11:13 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:43189
+2021-09-19 16:11:13 home         DEBUG    		Loading Graph
+2021-09-19 16:11:13 home         DEBUG    		Loading Template Action
+2021-09-19 16:11:13 home         DEBUG    		Loading NLP Model
+2021-09-19 16:11:13 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:11:13 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:11:14 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:11:14 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:11:14 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43189
+2021-09-19 16:11:14 urllib3.connectionpool DEBUG    http://127.0.0.1:43189 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:11:14 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:43189
+2021-09-19 16:11:14 urllib3.connectionpool DEBUG    http://127.0.0.1:43189 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:11:16 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:11:17 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:11:17 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:11:19 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:11:19 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:11:19 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:11:45 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/home/models.py changed, reloading.
+2021-09-19 16:11:45 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:11:47 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:11:48 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:11:48 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:11:48 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:11:48 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:11:49 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:46991
+2021-09-19 16:11:49 vncorenlp.vncorenlp INFO     Server ID: 22119
+2021-09-19 16:11:49 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:46991
+2021-09-19 16:11:49 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:11:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:46991
+2021-09-19 16:11:54 urllib3.connectionpool DEBUG    http://127.0.0.1:46991 "GET / HTTP/1.1" 200 None
+2021-09-19 16:11:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:46991
+2021-09-19 16:11:54 urllib3.connectionpool DEBUG    http://127.0.0.1:46991 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:11:54 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:46991
+2021-09-19 16:11:54 home         DEBUG    		Loading Graph
+2021-09-19 16:11:54 home         DEBUG    		Loading Template Action
+2021-09-19 16:11:54 home         DEBUG    		Loading NLP Model
+2021-09-19 16:11:54 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:11:54 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:11:55 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:11:55 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:11:55 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:46991
+2021-09-19 16:11:55 urllib3.connectionpool DEBUG    http://127.0.0.1:46991 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:11:55 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:46991
+2021-09-19 16:11:55 urllib3.connectionpool DEBUG    http://127.0.0.1:46991 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:11:57 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:11:57 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:11:57 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:11:59 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:11:59 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:11:59 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:12:28 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/home/models.py changed, reloading.
+2021-09-19 16:12:28 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:12:31 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:12:31 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:12:31 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:12:31 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:12:31 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:12:33 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:48323
+2021-09-19 16:12:33 vncorenlp.vncorenlp INFO     Server ID: 22265
+2021-09-19 16:12:33 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:48323
+2021-09-19 16:12:33 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:12:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:48323
+2021-09-19 16:12:38 urllib3.connectionpool DEBUG    http://127.0.0.1:48323 "GET / HTTP/1.1" 200 None
+2021-09-19 16:12:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:48323
+2021-09-19 16:12:38 urllib3.connectionpool DEBUG    http://127.0.0.1:48323 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:12:38 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:48323
+2021-09-19 16:12:38 home         DEBUG    		Loading Graph
+2021-09-19 16:12:38 home         DEBUG    		Loading Template Action
+2021-09-19 16:12:38 home         DEBUG    		Loading NLP Model
+2021-09-19 16:12:38 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:12:38 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:12:39 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:12:39 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:12:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:48323
+2021-09-19 16:12:39 urllib3.connectionpool DEBUG    http://127.0.0.1:48323 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:12:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:48323
+2021-09-19 16:12:39 urllib3.connectionpool DEBUG    http://127.0.0.1:48323 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:12:41 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:12:41 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:12:42 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:12:44 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:12:44 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:12:44 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:12:50 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/dashboard/views.py changed, reloading.
+2021-09-19 16:12:50 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:12:53 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:12:53 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:12:53 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:12:53 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:12:53 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:12:53 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:33921
+2021-09-19 16:12:53 vncorenlp.vncorenlp INFO     Server ID: 22374
+2021-09-19 16:12:53 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:33921
+2021-09-19 16:12:53 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:12:58 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:33921
+2021-09-19 16:12:59 urllib3.connectionpool DEBUG    http://127.0.0.1:33921 "GET / HTTP/1.1" 200 None
+2021-09-19 16:12:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:33921
+2021-09-19 16:12:59 urllib3.connectionpool DEBUG    http://127.0.0.1:33921 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:12:59 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:33921
+2021-09-19 16:12:59 home         DEBUG    		Loading Graph
+2021-09-19 16:12:59 home         DEBUG    		Loading Template Action
+2021-09-19 16:12:59 home         DEBUG    		Loading NLP Model
+2021-09-19 16:12:59 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:12:59 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:13:00 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:13:00 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:13:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:33921
+2021-09-19 16:13:00 urllib3.connectionpool DEBUG    http://127.0.0.1:33921 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:13:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:33921
+2021-09-19 16:13:00 urllib3.connectionpool DEBUG    http://127.0.0.1:33921 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:13:02 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:13:03 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:13:03 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:13:05 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:13:05 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:13:05 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:13:19 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/dashboard/views.py changed, reloading.
+2021-09-19 16:13:19 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:13:21 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:13:21 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:13:21 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:13:21 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:13:21 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:13:22 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:39013
+2021-09-19 16:13:22 vncorenlp.vncorenlp INFO     Server ID: 22524
+2021-09-19 16:13:22 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39013
+2021-09-19 16:13:22 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:13:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39013
+2021-09-19 16:13:27 urllib3.connectionpool DEBUG    http://127.0.0.1:39013 "GET / HTTP/1.1" 200 None
+2021-09-19 16:13:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39013
+2021-09-19 16:13:27 urllib3.connectionpool DEBUG    http://127.0.0.1:39013 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:13:27 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:39013
+2021-09-19 16:13:27 home         DEBUG    		Loading Graph
+2021-09-19 16:13:27 home         DEBUG    		Loading Template Action
+2021-09-19 16:13:27 home         DEBUG    		Loading NLP Model
+2021-09-19 16:13:27 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:13:27 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:13:28 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:13:28 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:13:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39013
+2021-09-19 16:13:28 urllib3.connectionpool DEBUG    http://127.0.0.1:39013 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:13:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39013
+2021-09-19 16:13:28 urllib3.connectionpool DEBUG    http://127.0.0.1:39013 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:13:30 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:13:30 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:13:30 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:13:32 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:13:32 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:13:32 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:13:50 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/dashboard/views.py changed, reloading.
+2021-09-19 16:13:50 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:13:52 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:13:52 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:13:52 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:13:52 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:13:52 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:13:53 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:39117
+2021-09-19 16:13:53 vncorenlp.vncorenlp INFO     Server ID: 22629
+2021-09-19 16:13:53 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39117
+2021-09-19 16:13:53 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:13:58 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39117
+2021-09-19 16:13:58 urllib3.connectionpool DEBUG    http://127.0.0.1:39117 "GET / HTTP/1.1" 200 None
+2021-09-19 16:13:58 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39117
+2021-09-19 16:13:58 urllib3.connectionpool DEBUG    http://127.0.0.1:39117 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:13:58 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:39117
+2021-09-19 16:13:58 home         DEBUG    		Loading Graph
+2021-09-19 16:13:58 home         DEBUG    		Loading Template Action
+2021-09-19 16:13:58 home         DEBUG    		Loading NLP Model
+2021-09-19 16:13:58 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:13:58 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:13:59 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:13:59 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39117
+2021-09-19 16:13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:39117 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:39117
+2021-09-19 16:13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:39117 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:14:01 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:14:01 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:14:01 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:14:04 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:14:04 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:14:04 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:14:07 django.utils.autoreload INFO     /home/hoaf13/workspace/web_app/django/voice_bot/dashboard/views.py changed, reloading.
+2021-09-19 16:14:07 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:14:09 tensorflow   DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-09-19 16:14:10 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:14:10 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:14:10 h5py._conv   DEBUG    Creating converter from 7 to 5
+2021-09-19 16:14:10 h5py._conv   DEBUG    Creating converter from 5 to 7
+2021-09-19 16:14:10 vncorenlp.vncorenlp INFO     Starting server on: http://127.0.0.1:60961
+2021-09-19 16:14:10 vncorenlp.vncorenlp INFO     Server ID: 22729
+2021-09-19 16:14:10 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:60961
+2021-09-19 16:14:10 vncorenlp.vncorenlp INFO     Waiting until the server is available...
+2021-09-19 16:14:15 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:60961
+2021-09-19 16:14:16 urllib3.connectionpool DEBUG    http://127.0.0.1:60961 "GET / HTTP/1.1" 200 None
+2021-09-19 16:14:16 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:60961
+2021-09-19 16:14:16 urllib3.connectionpool DEBUG    http://127.0.0.1:60961 "GET /annotators HTTP/1.1" 200 None
+2021-09-19 16:14:16 vncorenlp.vncorenlp INFO     The server is now available on: http://127.0.0.1:60961
+2021-09-19 16:14:16 home         DEBUG    		Loading Graph
+2021-09-19 16:14:16 home         DEBUG    		Loading Template Action
+2021-09-19 16:14:16 home         DEBUG    		Loading NLP Model
+2021-09-19 16:14:16 home         DEBUG    ---------- LOADING MODEL ---------
+2021-09-19 16:14:16 h5py._conv   DEBUG    Creating converter from 3 to 5
+2021-09-19 16:14:18 home         DEBUG    ---------- PREDICT -----------
+2021-09-19 16:14:18 home         DEBUG    sentence: tên của mình chưa đúng nhé.
+2021-09-19 16:14:18 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:60961
+2021-09-19 16:14:18 urllib3.connectionpool DEBUG    http://127.0.0.1:60961 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:14:18 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:60961
+2021-09-19 16:14:18 urllib3.connectionpool DEBUG    http://127.0.0.1:60961 "POST /handle HTTP/1.1" 200 None
+2021-09-19 16:14:20 home         DEBUG    Initialize - label: ask_name_wrong - prob: 1.0
+2021-09-19 16:14:20 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:14:21 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-09-19 16:14:23 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2021-09-19 16:14:23 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2021-09-19 16:14:23 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2021-09-19 16:15:52 asyncio      DEBUG    Using selector: EpollSelector
+2021-09-19 16:15:52 asyncio      DEBUG    Using selector: EpollSelector

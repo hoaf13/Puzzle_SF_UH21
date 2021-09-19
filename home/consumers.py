@@ -26,14 +26,13 @@ class ChatConsumer(AsyncWebsocketConsumer):
         self.scope['session']['records']['room_id'] = room_id
         self.scope['session']['records']['session_id'] = self.channel_name
         self.scope['session']['records']['pre_action'] = 'action_start'
-        
+    
         # Join room group
         await self.channel_layer.group_add(
             self.room_group_name,
             self.channel_name
         )
         await self.accept()
-
 
     async def disconnect(self, close_code):
         room_id = self.scope['session']['seed'] 
