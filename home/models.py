@@ -2,13 +2,26 @@ from django.db import models
 
 # Create your models here.
 
-class IntentAction(models.Model):
-    session_id = models.TextField(max_length=100)
-    room_id = models.TextField(max_length=100)
-    at_time = models.DateTimeField(auto_created=True)    
+class Conversation(models.Model):
+    _id = models.CharField(max_length=100)
+    create_time = models.CharField(max_length=100)
+    booking_status = models.CharField(max_length=100)
+    """
+    :success: đặt lịch thành công  
+    :foward: chuyển máy tới nhân viên 
+    :error: cuộc gọi bị lỗi (server lỗi)
+    :abort: khách hàng bỏ dở giữa chừng
+    """
+    end_time = models.CharField(max_length=100)
+    
+
+class QApair(models.Model):
+    at_time = models.CharField(max_length=100)
     intent = models.TextField(max_length=100)
     action = models.TextField(max_length=100)
     bot_message = models.TextField(max_length=1000)
     client_message = models.TextField(max_length=1000)  
-    
+    conversation = models.ForeignKey(Conversation, on_delete=models.CASCADE)
+
+
     

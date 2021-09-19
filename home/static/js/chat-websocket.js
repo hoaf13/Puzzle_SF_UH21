@@ -1,3 +1,5 @@
+// CHATBOT WEBSOCKET 
+
 const chatSocket = new WebSocket(
   'ws://'
   + window.location.host
@@ -47,7 +49,6 @@ $(function() {
         if (event.which === 13 || event.keyCode === 13 || event.key === "Enter") {
             $("#chat-submit").click()
             event.preventDefault();
-            $('#chat-input').attr('value') = ''
         }
     });
 

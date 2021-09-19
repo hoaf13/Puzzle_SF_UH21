@@ -3,11 +3,9 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 from django.conf import settings
 import random
 import asyncio
-from .models import IntentAction
 import logging 
 from utils.records import records
 from utils.context import * 
-from .models import IntentAction
 
 logger = logging.getLogger(__name__)
 

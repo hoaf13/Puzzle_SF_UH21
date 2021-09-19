@@ -108,22 +108,6 @@ function createDownloadLink(blob) {
     xhttp.open("POST", "http://127.0.0.1:8000/apis/v1/save_record/", true);
     var data = new FormData();
     data.append('data', blob, 'audio_blob');
-  //   var post_data = {
-  
-  //     'csrfmiddlewaretoken':"{{ csrf_token }}",
-  //       "data": data,
-  //   }
-  //   $.ajax({
-  //     url : "http://127.0.0.1:8000/apis/v1/save_record/",
-  //     type: 'POST',
-  //     dataType: 'json',
-  //     data: post_data,
-  //     cache : false,
-  //     processData: false
-  // }).done(function(response) {
-  //     alert(response);
-  // });
-    // console.log(post_data);
     console.log(this.readyState);
     xhttp.send(data);
     xhttp.onreadystatechange = function() {
@@ -131,8 +115,6 @@ function createDownloadLink(blob) {
             console.log(this.responseText);     
          }
     };
-    
-	//add the li element to the ol
 }
 
 // recording animation
@@ -141,10 +123,12 @@ $('#record-button').addClass("notRec");
 $('#record-button').click(function(){
 	if($('#record-button').hasClass('notRec')){
 		$('#record-button').removeClass("notRec");
+    console.log("đang ghi âm ...")
 		$('#record-button').addClass("Rec");
 	}
 	else{
 		$('#record-button').removeClass("Rec");
+    console.log("dừng ghi âm ...")
 		$('#record-button').addClass("notRec");
 	}
 });	
