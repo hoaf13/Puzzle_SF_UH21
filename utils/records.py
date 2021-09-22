@@ -1,3 +1,4 @@
+# Records during the conversations 
 records = {
     "room_id": None,
     "pre_action": None,
@@ -7,6 +8,8 @@ records = {
     "time_repeat": 0,
     "confirm_repeat": 0,
 
+
+    "audio_tts_url": None,
     "hospital_name": "Hồng Ngọc",
     "choosen_department": None,
     "customer_name": None,

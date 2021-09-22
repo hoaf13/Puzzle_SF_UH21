@@ -1,5 +1,8 @@
 import json 
 
+"""
+Load all resources after server runs.
+"""
 class Loader():
     def __init__(self) -> None:
         pass

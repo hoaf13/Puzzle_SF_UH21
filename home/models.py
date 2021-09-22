@@ -16,8 +16,8 @@ class Conversation(models.Model):
     
 
 class QApair(models.Model):
-    create_time_bot_message = models.CharField(max_length=100)
-    create_time_client_message = models.CharField(max_length=100)
+    create_time_bot_message = models.CharField(max_length=100, null=True)
+    create_time_client_message = models.CharField(max_length=100, null=True)
     action = models.TextField(max_length=100)
     bot_message = models.TextField(max_length=1000)
     intent = models.TextField(max_length=100)

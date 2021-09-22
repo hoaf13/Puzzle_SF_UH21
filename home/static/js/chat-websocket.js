@@ -18,15 +18,19 @@ window.onload = function(){
 $(function() {
     var INDEX = 0; 
     var emojis = [0x1F600, 0x1F604, 0x1F34A, 0x1F344, 0x1F37F, 0x1F363, 0x1F370, 0x1F355, 0x1F354, 0x1F35F, 0x1F6C0, 0x1F48E, 0x1F5FA, 0x23F0, 0x1F579, 0x1F4DA, 0x1F431, 0x1F42A, 0x1F439, 0x1F424];    
+    
     $("#chat-submit").click(function(e) {
       e.preventDefault();
       var msg = $("#chat-input").val(); 
       if(msg.trim() == ''){
         return false;
       }
-      const message = msg;
+      const message = {
+        'message': msg,
+        'input_type': 'button'
+      };
       chatSocket.send(JSON.stringify({
-          'message': message
+          'message': message,
       }));
       generate_message(msg, 'self');
       var buttons = [
@@ -39,9 +43,15 @@ $(function() {
             value: 'new'
           }
         ]; 
+
       chatSocket.onmessage = function(e) {
         const data = JSON.parse(e.data);
-        generate_message(data.message, 'user');                  
+        if (data.input_type == "button"){
+          generate_message(data.message, 'user');                  
+        }
+        if (data.input_type == "logo"){
+          console.log(data.audio_url)
+        }
       };   
     })
     
@@ -110,4 +120,8 @@ $(function() {
       $(".chat-box").toggle('scale');
     })
     
+    
+
   })
+
+  

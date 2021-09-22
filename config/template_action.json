@@ -15,14 +15,14 @@
     "action_ask_department_2":[
         {
             "properties": "repeat",
-            "text": "Em xin nhắc lại, bên em đang hỗ trợ đặt lịch những khoa sau: thần kinh, tim mạch, hô hấp, tai mắt miệng, xương khớp, khám nội hay khám sức khỏe tổng hợp. Anh chị muốn đặt lịch cho khoa nào vậy.",
-            "text_tts": "Em xin nhắc lại, bên em đang hỗ trợ đặt lịch những khoa sau: thần kinh, tim mạch, hô hấp, tai mắt miệng, xương khớp, khám nội hay khám sức khỏe tổng hợp. Anh chị muốn đặt lịch cho khoa nào vậy."
+            "text": "Em xin nhắc lại, bên em đang hỗ trợ đặt lịch những khoa sau: thần kinh, tim mạch, hô hấp, tai mắt miệng, xương khớp, khám nội và khám sức khỏe tổng hợp. Anh chị muốn đặt lịch cho khoa nào vậy.",
+            "text_tts": "Em xin nhắc lại, bên em đang hỗ trợ đặt lịch những khoa sau: thần kinh, tim mạch, hô hấp, tai mắt miệng, xương khớp, khám nội và khám sức khỏe tổng hợp. Anh chị muốn đặt lịch cho khoa nào vậy."
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Hiện tại, bên em đang hỗ trợ đặt lịch những khoa sau: thần kinh, tim mạch, hô hấp, tai mắt miệng, xương khớp, khám nội hay khám sức khỏe tổng hợp. Anh chị muốn đặt lịch cho khoa nào vậy.",
-            "text_tts": "Hiện tại, bên em đang hỗ trợ đặt lịch những khoa sau: thần kinh, tim mạch, hô hấp, tai mắt miệng, xương khớp, khám nội hay khám sức khỏe tổng hợp. Anh chị muốn đặt lịch cho khoa nào vậy."
+            "text": "Em xin ghi nhận hiện trạng bệnh của anh chị. Bên em đang hỗ trợ đặt lịch những khoa sau: thần kinh, tim mạch, hô hấp, tai mắt miệng, xương khớp, khám nội và khám sức khỏe tổng hợp. Anh chị muốn đặt lịch cho khoa nào vậy.",
+            "text_tts": "Em xin ghi nhận hiện trạng bệnh của anh chị. Bên em đang hỗ trợ đặt lịch những khoa sau: thần kinh, tim mạch, hô hấp, tai mắt miệng, xương khớp, khám nội và khám sức khỏe tổng hợp. Anh chị muốn đặt lịch cho khoa nào vậy."
         }
     ],
     "action_bye_3":[
@@ -54,14 +54,14 @@
     "action_ask_free_date_5":[
         {
             "properties": "repeat",
-            "text": "Thông tin chưa chính xác. Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?",
-            "text_tts": "Thông tin chưa chính xác. Em xin nhắc lại, hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?"
+            "text": "Thông tin chưa chính xác. Em xin nhắc lại, lịch khám {get_choosen_department} còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?",
+            "text_tts": "Thông tin chưa chính xác. Em xin nhắc lại, lịch khám {get_choosen_department} còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?"
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?",
-            "text_tts": "Hiện lịch khám còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?"
+            "text": "Lịch khám {get_choosen_department} còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?",
+            "text_tts": "Lịch khám {get_choosen_department} còn trống những ngày sau: {get_free_date}, anh chị muốn chọn lịch khám nào ạ?"
         }
     ],
     "action_ask_name_6":[
@@ -74,7 +74,7 @@
             "status": "chat",
             "properties": "first_time",
             "text": "Anh chị vui lòng cho biết tên đầy đủ của bệnh nhân.",
-            "text_tts": "Anh chị vui lòng cho biết tên đầy đủ của bệnh nhân."
+            "text_tts": "Anh chị vui lòng cho biết, tên đầy đủ của bệnh nhân."
         }
     ],
     "action_ask_gender_7":[
@@ -87,19 +87,19 @@
             "status": "chat",
             "properties": "first_time",
             "text": "Anh chị vui lòng cho biết giới tính bệnh nhân.",
-            "text_tts": "Anh chị vui lòng cho biết giới tính bệnh nhân."
+            "text_tts": "Anh chị vui lòng cho biết, giới tính bệnh nhân."
         }
     ],
     "action_ask_age_8":[
         {
             "properties": "repeat",
-            "text": "Xin lỗi em chưa rõ, bệnh nhân bao nhiêu tuổi ạ.",
-            "text_tts": "Xin lỗi em chưa rõ, bệnh nhân bao nhiêu tuổi ạ."
+            "text": "Xin lỗi em chưa rõ, em xin hỏi lại bệnh nhân bao nhiêu tuổi ạ.",
+            "text_tts": "Xin lỗi em chưa rõ, em xin hỏi lại, bệnh nhân bao nhiêu tuổi ạ."
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Em xin hỏi bệnh nhân bao nhiêu tuổi ạ.",
+            "text": "Em xin hỏi, bệnh nhân bao nhiêu tuổi ạ.",
             "text_tts": "Em xin hỏi, bệnh nhân bao nhiêu tuổi ạ."
         }
     ],
@@ -190,8 +190,8 @@
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Anh chị vui lòng đọc tên bệnh nhân giúp em.",
-            "text_tts": "Anh chị vui lòng đọc tên bệnh nhân giúp em."
+            "text": "Anh chị vui lòng cho biết tên bệnh nhân giúp em.",
+            "text_tts": "Anh chị vui lòng cho biết tên bệnh nhân giúp em."
         }
     ],
     "action_ask_age_wrong_16":[
@@ -203,21 +203,21 @@
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Anh chị vui lòng đọc tuổi bệnh nhân giúp em.",
-            "text_tts": "Anh chị vui lòng đọc tuổi bệnh nhân giúp em."
+            "text": "Anh chị vui lòng cho biết bệnh nhân bao nhiêu tuổi.",
+            "text_tts": "Anh chị vui lòng cho biết bệnh nhân bao nhiêu tuổi."
         }
     ],
     "action_ask_gender_wrong_17":[
         {
             "properties": "repeat",
-            "text": "Em chưa rõ giới tính, anh chị vui lòng đọc lại giới tính bệnh nhân giúp em.",
-            "text_tts": "Em chưa rõ giới tính, anh chị vui lòng đọc lại giới tính bệnh nhân giúp em."
+            "text": "Em chưa rõ giới tính, anh chị vui lòng cho biết giới tính bệnh nhân giúp em.",
+            "text_tts": "Em chưa rõ giới tính, anh chị vui lòng cho biết giới tính bệnh nhân giúp em."
         },
         {
             "status": "chat",
             "properties": "first_time",
-            "text": "Anh chị vui lòng đọc giới tính bệnh nhân giúp em.",
-            "text_tts": "Anh chị vui lòng đọc giới tính bệnh nhân giúp em."
+            "text": "Anh chị vui lòng cho biết giới tính bệnh nhân.",
+            "text_tts": "Anh chị vui lòng cho biết giới tính bệnh nhân."
         }
     ],
     "action_ask_free_date_repeat_18":[

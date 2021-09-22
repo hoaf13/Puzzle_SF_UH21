@@ -1,49 +1,61 @@
-from requests.api import request
+"""
+Config policy and rule in chatbot && callbot 
+"""
 from home import graphs, actions
 from home import model
 import json 
 import random 
 import requests
 import re 
-import redis 
 from underthesea import ner
-
-red = redis.StrictRedis(host='localhost', port=6379)
+from vietnam_number import w2n 
 
 f = open('config/api_config.json','r')
 API_CONFIG = json.load(f)
 f = open('regex/departments.json','r')
 DEPARTMENTS = json.load(f)
-
-INTENT_ENDPONINT = API_CONFIG['intent-api'][0]['endpoint']
-INTENT_METHOD = API_CONFIG['intent-api'][0]['method']
 ACTION_GREETING = 'action_ask_symptom_1'
 THRESHOLD = 0.5
 
-
-def get_message_response(message, records, true_intent, true_action):
+# Get bot's response
+def get_message_response(message, records, true_intent, true_action, flag="text"):
     message = None
     properties = get_properties(true_action, records)
     print(f"properties: {properties}")
-    message = get_message_text(true_action,true_intent, properties, records)
+    message = get_message_text(true_action,true_intent, properties, records, flag)
     print(f"{true_action}: {message}")
     return message
 
 
+"""
+Using policy and rule to choose the best intent.
+Cases depends on actions.
+
+[format]
+switch [pre_action]:
+- case 'action_start': 
+- case 'action_ask_symptom_1':
+- case 'action_ask_department_2'
+...
+"""
 def get_true_intent(message, records):
     try:
         true_intent = None
         pre_action = records['pre_action']
         pre_intent = records['pre_intent']
         true_intent = get_predict_intent(message, pre_action)
+        
         if pre_action in ['action_start']:
             true_intent = "intent_start"
+        
         if pre_action in ['action_ask_symptom_1']:
             true_intent = 'describe_symptom'
             records['customer_symptom'] = message
+
         if pre_action in ['action_ask_department_2']:
             true_department = None
-            for department in DEPARTMENTS:
+            # regex to match department in client's response
+            for department in DEPARTMENTS: 
                 pattern = []
                 for p in DEPARTMENTS[department]:
                     pattern.append(p)
@@ -55,20 +67,43 @@ def get_true_intent(message, records):
                     true_intent = 'choose_department'
                     true_department = department
                     records['choosen_department'] = true_department
-            if true_department is None and pre_intent in ['choose_department']:
+            if true_department is None and true_intent in ['choose_department']:
                 true_intent = 'choose_another_department'
             print(f"get_true_intent: true_intent: {true_intent} - true_department: {true_department}")
+            # in case matched department
             if true_department:
                 records['department'] = true_department
                 records['this_week_free_date_status'] = True
-                true_department = "ngoai khoa"
-                this_week_endpoint = API_CONFIG['hospital-api'][0]['endpoint'] + true_department
-                next_week_endpoint = API_CONFIG['hospital-api'][1]['endpoint'] + true_department
-                this_week_response = requests.get(this_week_endpoint).text
-                next_week_response = requests.get(next_week_endpoint).text
+                this_week_response, next_week_response = get_hospital_free_date()
+                this_week_response = """
+                    {
+                        "FreeStatus": false,
+                        "ListFreeDay": []
+                    }    
+                """
+                next_week_response = """
+                    {
+                    "FreeStatus": true,
+                    "ListFreeDay": [
+                        {
+                        "date": "09/27/2021",
+                        "order": 2
+                        },
+                        {
+                        "date": "09/28/2021",
+                        "order": 3
+                        },
+                        {
+                        "date": "09/29/2021",
+                        "order": 4
+                        }
+                    ]
+                    }
+                """
                 print("response:", this_week_response, next_week_response)
                 this_week_free_date = json.loads(this_week_response)
                 next_week_free_date = json.loads(next_week_response)
+
                 if this_week_free_date['FreeStatus'] is True:
                     true_intent = 'free_booking'
                     records['this_week_free_date_status'] = True
@@ -128,10 +163,19 @@ def get_true_intent(message, records):
         return true_intent
 
     except Exception as e:
-        print(e)
+        print(f"Exception from get_true_intent: {e}")
         return "intent_fallback"
-    
 
+
+def get_hospital_free_date():
+    true_department = "ngoai khoa"
+    this_week_endpoint = API_CONFIG['hospital-api'][0]['endpoint'] + true_department
+    next_week_endpoint = API_CONFIG['hospital-api'][1]['endpoint'] + true_department
+    this_week_response = requests.get(this_week_endpoint).text
+    next_week_response = requests.get(next_week_endpoint).text
+    return this_week_response, next_week_response
+
+# Example Output: 'thứ 3'
 def get_customer_pick_date(message):
     ans = None
     f = open('regex/date.json','r')
@@ -147,7 +191,7 @@ def get_customer_pick_date(message):
             ans = date
     return ans
 
-
+# Example Output: '22/09/2021'
 def get_customer_pick_date_detail(customer_pick_date, records):
     ans = None 
     free_dates = records['free_date']
@@ -171,7 +215,7 @@ def get_customer_pick_date_detail(customer_pick_date, records):
         ans = ans[1] + '/' + ans[0] + '/' + ans[2]
     return ans
 
-
+# Example Output: 'Nguyễn Văn Hòa'
 def get_customer_name(message):
     ans = []
     message = message.title() 
@@ -185,8 +229,14 @@ def get_customer_name(message):
             ans.append(tokens[0])
     return ans[-1]
 
-
+# Example Output: 21
 def get_customer_age(message):
+    message = message.replace('năm nay', '')
+    try:
+        message = str(w2n(message))
+    except Exception as e:
+        print(f"Exception in recognize word to number: {e}")
+    print(f"get_customer_age - w2n: {message}")
     ans = None
     pattern = '\d+'
     numbers = re.findall(pattern, message)
@@ -195,7 +245,7 @@ def get_customer_age(message):
         ans = numbers[-1]
     return ans 
 
-
+# Example Output: 'nam' or 'nữ'
 def get_customer_gender(message):
     ans = None
     f = open('regex/gender.json','r')
@@ -212,7 +262,7 @@ def get_customer_gender(message):
         
     return ans
         
-
+# Example Output: 'provide_name'
 def get_predict_intent(message, pre_action):
     predict_label, prob = model.predict(message)
     print(f"get_predict_intent - label: {predict_label} - prob: {prob}")
@@ -225,7 +275,10 @@ def get_predict_intent(message, pre_action):
     
     return predict_label
     
-
+"""
+Get properties of chat status: the first time, repeat
+"""
+# Example Output: 'repeat'
 def get_properties(true_action, records):
     properties = None
     
@@ -235,24 +288,33 @@ def get_properties(true_action, records):
         properties = "first_time"
     return properties
 
-
-def get_message_text(true_action, true_intent, properties, records):
+"""
+Replace all references in action templates
+"""
+def get_message_text(true_action, true_intent, properties, records, flag):
     message = None
     reponses = actions[true_action]
     for response in reponses:
         if response['properties'] == properties:
-            message = response['text']
-            break
+            if flag == "text":
+                message = response['text']
+                break
+            if flag == "text_tts":
+                message = response['text_tts']
+                break
     message = message.replace("{get_hospital_name}", get_hospital_name(records))
-    message = message.replace("{get_free_date}", get_free_date(records))
+    message = message.replace("{get_free_date}", get_free_date(records, flag))
     message = message.replace("{get_customer_info}", get_customer_info(records))
     message = message.replace("{get_meeting_time}", get_meeting_time(records))
+    message = message.replace("{get_choosen_department}", get_choosen_department(records))
     return message
 
-
+# Example Ouptut: "action_bye_12"
 def get_true_action(true_intent, records):
     cur_action = None
     pre_action = records['pre_action']
+    if pre_action == None:
+        pre_action = 'action_start'
     if true_intent == "intent_start":
         cur_action = ACTION_GREETING
         return cur_action
@@ -264,7 +326,10 @@ def get_true_action(true_intent, records):
         if records['time_repeat'] == 2:
             true_intent = 'repeat_three_times'
     if true_intent not in graphs[pre_action]:
-        true_intent = 'intent_fallback'
+        if pre_action != 'action_start':
+            true_intent = 'intent_fallback'
+        else:
+            true_intent = 'intent_start'
     cur_action = graphs[pre_action][true_intent]
    
     if cur_action in ['action_ask_confirm_9']:
@@ -276,41 +341,21 @@ def get_true_action(true_intent, records):
         records['time_repeat'] += 1
     else:
         records['time_repeat'] = 0    
-
-    # restart room
-    if cur_action == 'action_ask_symptom_1':
-        records = {
-            "room_id": None,
-            "pre_action": None,
-            "pre_intent": None,
-            "cur_action": None,
-            "cur_intent": None,
-            "time_repeat": 0,
-            "confirm_repeat": 0,
-
-            "hospital_name": "Hồng Ngọc",
-            "choosen_department": None,
-            "customer_name": None,
-            "customer_age": None,
-            "customer_gender": None, 
-            "customer_symptom": None,
-            "customer_pick_date": None, 
-            "customer_pick_date_detail": None, 
-            "is_priority": None,
-            "department": None,
-            "free_date": None,
-            "this_week_free_date_status": None,
-            "repeat_action": 0
-        }
     return cur_action
     
-
+"""
+Update records after bot responses
+"""
 def update_records(records, true_intent, true_action):
     records['pre_action'] = true_action
     records['pre_intent'] = true_intent
-    return records
+    if "bye" in records['pre_action']:
+        records['pre_action'] = 'action_start'
+    
 
+"""
 
+"""
 def get_free_date_list(records):
     free_dates = records['free_date']
     if free_dates == None:
@@ -337,12 +382,12 @@ def get_free_date_list(records):
     return dates
     
 
-# Reference to TemplateAction config
+#----------------- Reference to template action config -----------------#
 def get_hospital_name(records):
     return records['hospital_name']
 
 
-def get_free_date(records):
+def get_free_date(records, flag):
     free_dates = records['free_date']
     if free_dates == None:
         return ""
@@ -356,7 +401,10 @@ def get_free_date(records):
         if order == 3:
             dates.append("thứ 3")
         if order == 4:
-            dates.append("thứ 4")
+            if flag == "text":
+                dates.append("thứ 4")
+            else:
+                dates.append("thứ tư")
         if order == 5:
             dates.append("thứ 5")
         if order == 6:
@@ -378,7 +426,14 @@ def get_customer_info(records):
     customer_age = records['customer_age']
     customer_gender = records['customer_gender']
     customer_pick_date = records['customer_pick_date']
-    response = f"bệnh nhân {customer_name}, giới tính {customer_gender}, {customer_age} tuổi, chọn ngày {customer_pick_date} đến khám bệnh"
+    if customer_pick_date == "thứ 4":
+        customer_pick_date = "thứ tư"
+    response = ""
+    this_week_free_date_status = records['this_week_free_date_status']
+    if this_week_free_date_status is None or this_week_free_date_status == True:
+        response = f"bệnh nhân {customer_name}, giới tính {customer_gender}, {customer_age} tuổi, chọn ngày {customer_pick_date} tuần này đến khám bệnh"
+    else:
+        response = f"bệnh nhân {customer_name}, giới tính {customer_gender}, {customer_age} tuổi, chọn ngày {customer_pick_date} tuần sau đến khám bệnh"
     return response
 
 
@@ -386,6 +441,8 @@ def get_meeting_time(records):
     response = "" 
     this_week_free_date_status = records['this_week_free_date_status']
     customer_pick_date = records['customer_pick_date']
+    if customer_pick_date == "thứ 4":
+        customer_pick_date = "thứ tư"
     customer_pick_date_detail = records['customer_pick_date_detail']
     detail_time = random.choice(list(range(7,18)))
     if this_week_free_date_status == True:
@@ -393,3 +450,9 @@ def get_meeting_time(records):
     if this_week_free_date_status == False:
         response = f"{detail_time} giờ, {customer_pick_date} tuần sau, ngày {customer_pick_date_detail}"
     return response
+
+def get_choosen_department(records):
+    if records['choosen_department'] is not None:
+        choosen_department = "khoa " + records['choosen_department']
+        return choosen_department
+    return ""

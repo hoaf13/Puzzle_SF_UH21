@@ -1,3 +1,4 @@
+
 //webkitURL is deprecated but nevertheless
 URL = window.URL || window.webkitURL;
 
@@ -99,22 +100,41 @@ function createDownloadLink(blob) {
 
 	//save to disk link
 	link.href = url;
-	link.download = filename+".wav"; //download forces the browser to donwload the file using the  filename
+	link.download = filename+".wav"; //download forces the browser to donwload the file using the filename
 	
 	//upload link
 	console.log(blob);
-    var xhttp = new XMLHttpRequest();
+  var xhttp = new XMLHttpRequest();
 
-    xhttp.open("POST", "http://127.0.0.1:8000/apis/v1/save_record/", true);
-    var data = new FormData();
-    data.append('data', blob, 'audio_blob');
-    console.log(this.readyState);
-    xhttp.send(data);
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);     
-         }
-    };
+  xhttp.open("POST", "http://127.0.0.1:8000/", true);
+  var data = new FormData();
+  
+  data.append('data', blob, filename);
+
+  console.log(this.readyState);
+  xhttp.send(data);
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText);     
+      }
+  };
+  console.log("send logo audio to server")
+  const message = {
+    'message': filename,
+    'input_type': 'logo'
+  };
+  chatSocket.send(
+    JSON.stringify({
+      'message': message,
+    })
+  )
+  chatSocket.onmessage = function(e) {
+    const data = JSON.parse(e.data);
+    if (data.input_type == "logo"){
+      console.log(data.audio_url)
+      $("#bot-audio").attr("src",data.audio_url);
+    }
+  };   
 }
 
 // recording animation
@@ -130,5 +150,6 @@ $('#record-button').click(function(){
 		$('#record-button').removeClass("Rec");
     console.log("dừng ghi âm ...")
 		$('#record-button').addClass("notRec");
+   
 	}
 });	

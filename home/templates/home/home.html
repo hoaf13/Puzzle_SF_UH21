@@ -17,14 +17,15 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
   
-  <script type="text/javascript" src="{% static 'js/chat-websocket.js'%}"></script>
 
 </head>
 <body>
   <div id="center-text">
     <img class="notRec" value = "stop-recording" id = "record-button" src="{% static 'img/puzzle_logo.png'%}" alt="Puzzle" style="width: 220px; border-radius: 10px; -webkit-box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); -moz-box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); box-shadow: 4px 6px 8px 10px rgba(0,0,0,0.2); cursor: pointer;">
+      <iframe id="bot-audio" src="http://103.141.140.189:8091/data/end2end_ngocmiu/20210921091803-19a47c0d.wav" allow="autoplay" style="display:none" id="iframeAudio">
+      </iframe> 
     <h2 style="font-family: 'Word Sans', sans-serif; font-size: 128px;font-weight: bold;margin-top: 70px;">Puzzle Team</h2>
-    <h2 style="color: #21abf3;">Welcome to the Virtual Assistant Booking</h2>
+    <h2 style="color: #21abf3;">Welcome to the Virtual Booking Assistant </h2>
   </div> 
 <div id="body"> 
   
@@ -67,6 +68,8 @@
 
   <script type="text/javascript" src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
   <script type="text/javascript" src="{% static 'js/audio-record.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/chat-websocket.js'%}"></script>
+
   
 </div>
   

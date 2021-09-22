@@ -1,1 +1,4 @@
 config/api_config.json
+voice_bot/.env
+resource/audio/*
+resource/audio_tts/*
