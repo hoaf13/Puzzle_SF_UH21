@@ -75,31 +75,6 @@ def get_true_intent(message, records):
                 records['department'] = true_department
                 records['this_week_free_date_status'] = True
                 this_week_response, next_week_response = get_hospital_free_date()
-                this_week_response = """
-                    {
-                        "FreeStatus": false,
-                        "ListFreeDay": []
-                    }    
-                """
-                next_week_response = """
-                    {
-                    "FreeStatus": true,
-                    "ListFreeDay": [
-                        {
-                        "date": "09/27/2021",
-                        "order": 2
-                        },
-                        {
-                        "date": "09/28/2021",
-                        "order": 3
-                        },
-                        {
-                        "date": "09/29/2021",
-                        "order": 4
-                        }
-                    ]
-                    }
-                """
                 print("response:", this_week_response, next_week_response)
                 this_week_free_date = json.loads(this_week_response)
                 next_week_free_date = json.loads(next_week_response)
@@ -166,9 +141,23 @@ def get_true_intent(message, records):
         print(f"Exception from get_true_intent: {e}")
         return "intent_fallback"
 
-
-def get_hospital_free_date():
-    true_department = "ngoai khoa"
+# Request to HospitalAPI to get free date in this week and next week
+def get_hospital_free_date(records):
+    true_department = records['choosen_department']
+    if true_department == 'thần kinh':
+        true_department = 'than kinh'
+    if true_department == 'tim mạch':
+        true_department = 'tim mach'
+    if true_department == 'hô hấp':
+        true_department = 'ho hap'
+    if true_department == 'tai mắt miệng':
+        true_department = 'tai mat mieng'
+    if true_department == 'xương khớp':
+        true_department = 'xuong khop'
+    if true_department == 'khám nội':
+        true_department = 'kham noi'
+    if true_department == 'khám sức khỏe tổng hợp':
+        true_department = 'kham suc khoe tong the'    
     this_week_endpoint = API_CONFIG['hospital-api'][0]['endpoint'] + true_department
     next_week_endpoint = API_CONFIG['hospital-api'][1]['endpoint'] + true_department
     this_week_response = requests.get(this_week_endpoint).text
@@ -353,9 +342,6 @@ def update_records(records, true_intent, true_action):
         records['pre_action'] = 'action_start'
     
 
-"""
-
-"""
 def get_free_date_list(records):
     free_dates = records['free_date']
     if free_dates == None:

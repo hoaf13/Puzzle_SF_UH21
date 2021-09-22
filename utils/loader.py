@@ -6,7 +6,7 @@ Load all resources after server runs.
 class Loader():
     def __init__(self) -> None:
         pass
-    
+
     @staticmethod
     def load_graph(dir2file):
         graphs = dict()
@@ -24,7 +24,8 @@ class Loader():
                     graphs[tokens[0]] = dict()
                 graphs[tokens[0]][tokens[1]] = tokens[2]
         return graphs
-
+        
+    @staticmethod
     def load_action(dir2file):
         actions = dict()
         f = open(dir2file, encoding="utf8")

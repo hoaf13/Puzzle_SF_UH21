@@ -7,9 +7,8 @@ records = {
     "cur_intent": None,
     "time_repeat": 0,
     "confirm_repeat": 0,
-
-
     "audio_tts_url": None,
+
     "hospital_name": "Hồng Ngọc",
     "choosen_department": None,
     "customer_name": None,
